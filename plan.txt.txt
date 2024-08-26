@@ -1,0 +1,6 @@
+TODO:
+Finish implementing challenge randomization
+Image design for each level map
+JavaScript Challenges
+Python Challenges
+Web Hosting
