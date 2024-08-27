@@ -1,5 +1,5 @@
 TODO:
-Finish implementing challenge randomization for Scratch
+Cookies and completion
 Image design for each level map
 JavaScript Challenges
 Python Challenges
