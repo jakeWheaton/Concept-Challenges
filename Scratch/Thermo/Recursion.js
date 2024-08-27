@@ -27,7 +27,7 @@ function recursion() {
   textSize(32)
   noStroke()
   textFont(scratchFont1)
-  text("Create a custom block named "+ r.name +" which uses recursion to " + r.effect, windowWidth/2-222,125,500,350);
+  text("Create a custom block named "+ r.name +" which uses recursion to " + r.effect, windowWidth/2-222,125,450,350);
   drawScratchButtons()
 }
 
@@ -40,7 +40,7 @@ function recursionClick(){
         player.y = 0;
       }
       if (button.name == "To Scratch"){
-        window.open("https://scratch.mit.edu/projects/731634835/editor/");
+        window.open("https://scratch.mit.edu/projects/731634835/");
       }
     }
   }

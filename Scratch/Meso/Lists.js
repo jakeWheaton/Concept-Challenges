@@ -27,7 +27,7 @@ function lists() {
   textSize(32)
   noStroke()
   textFont(scratchFont1)
-  text("1) Create a list named "+ v +" \n\n\n2) Fill " + v + " with " + n1 + " different numbers when the game begins\n\n3) Use any trigger to make each number in " + v + " " + a + " by 1", windowWidth/2-222,125,500,350);
+  text("1) Create a list named "+ v +" \n\n\n2) Fill " + v + " with " + n1 + " different numbers when the game begins\n\n3) Use any trigger to make each number in " + v + " " + a + " by 1", windowWidth/2-222,125,450,350);
   drawScratchButtons()
 }
 

@@ -25,7 +25,7 @@ function algorithmicDesign() {
   textSize(32)
   noStroke()
   textFont(scratchFont1)
-  text("Create an algorithm for "+ a.name +" which " +a.effect, windowWidth/2-222,125,500,350);
+  text("Create an algorithm for "+ a.name +" which " +a.effect, windowWidth/2-222,125,450,350);
   drawScratchButtons()
 }
 
@@ -38,7 +38,7 @@ function algorithmicDesignClick(){
         player.y = 0;
       }
       if (button.name == "To Scratch"){
-        window.open("https://scratch.mit.edu/projects/731633162/editor/");
+        window.open("https://scratch.mit.edu/projects/731633162/");
       }
     }
   }

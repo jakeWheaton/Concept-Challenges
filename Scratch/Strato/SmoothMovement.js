@@ -28,7 +28,7 @@ function smoothMovementClick(){
         player.y = 0;
       }
       if (button.name == "To Scratch"){
-        window.open("");
+        window.open("https://scratch.mit.edu/projects/1059796393/");
       }
     }
   }

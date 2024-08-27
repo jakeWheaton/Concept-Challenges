@@ -27,7 +27,7 @@ function customBlocks() {
   textSize(32)
   noStroke()
   textFont(scratchFont1)
-  text("Create a custom block named "+ b.name +" with an input of " + b.input + " which creates the following effect:\n\n\n"+b.effect, windowWidth/2-222,125,500,350);
+  text("Create a custom block named "+ b.name +" with an input of " + b.input + " which creates the following effect:\n\n\n"+b.effect, windowWidth/2-222,125,450,350);
   drawScratchButtons()
 }
 

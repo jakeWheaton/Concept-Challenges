@@ -16,7 +16,7 @@ challenges = {
   AlgorithmicDesign:{draw:algorithmicDesign, mousePressed:algorithmicDesignClick, setup:algorithmicDesignSetup},
   CustomBlocks:{draw:customBlocks, mousePressed:customBlocksClick, setup:blocksSetup},
   Lists:{draw:lists, mousePressed:listsClick, setup:listsSetup},
-  Cloning:{draw:cloning, mousePressed:cloningClick},
+  Cloning:{draw:cloning, mousePressed:cloningClick, setup:cloningSetup},
   Loops:{draw:loops, mousePressed:loopsClick, setup:loopsSetup},
   Recursion:{draw:recursion, mousePressed:recursionClick, setup:recursionSetup},
   Broadcasts:{draw:broadcasts, mousePressed:broadcastsClick, setup : broadcastSetup},
