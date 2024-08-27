@@ -92,6 +92,14 @@ function choice(arr){
   return arr[floor(random(0,arr.length))]
 }
 
+function setCookie(name,val){
+	const d = new Date();
+	//set expiration for 1000 days
+	d.setTime(d.getTime() + (1000*24*60*60*1000));
+	let expires = "expires="+ d.toUTCString();
+	document.cookie = name + "=" + val + ";" + expires;
+}
+
 function keyPressed(){
   register[keyCode] = true;
   if(keyCode == 49){

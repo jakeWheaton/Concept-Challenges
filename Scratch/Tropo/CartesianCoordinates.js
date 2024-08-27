@@ -19,17 +19,26 @@ function cartesianCoordinates() {
   drawScratchButtons()
 }
 
-function cartesianCoordinatesClick(){
-  for (var button of scratchButtons){
-    if (touchingMouse(button)){
-      if(button.name == "Back"){
+function cartesianCoordinatesClick() {
+  for (var button of scratchButtons) {
+    if (touchingMouse(button)) {
+      if(button.name == "Back") {
         scene = "ScratchTropo";
         player.x = 0;
         player.y = 0;
       }
-      if (button.name == "To Scratch"){
+      if (button.name == "To Scratch") {
         window.open("https://scratch.mit.edu/projects/719199495/");
       }
+	  if (button.name =="Success") {
+		  answer = prompt("Are you a master of Cartesian Coordinates? (yes/no)", "yes");
+		  if (answer == "yes"){
+			alert("Nice Work!");
+			scene = "ScratchTropo";
+			player.x = 0;
+			player.y = 0;
+		  }
+	  }
     }
   }
 }
