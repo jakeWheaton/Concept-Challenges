@@ -1,3 +1,11 @@
+var extensionOptions = ["Pen", "Music", "Video Sensing", "Text to Speech", "translate"]
+
+var eo;
+
+function extensionsSetup(){
+	eo = choice(extensionOptions);
+}
+
 //Strato
 function extensions() {
   background(255,200,100);
@@ -14,7 +22,7 @@ function extensions() {
   textSize(32)
   noStroke()
   textFont(scratchFont1)
-  text("Create a simple project which uses the \n\nPen Extension", windowWidth/2-222,125,500,350);
+  text("1) Load the " + eo + " module into your project\n\n2) Build something cool with it!", windowWidth/2-222,125,450,350);
   drawScratchButtons()
 }
 
@@ -27,7 +35,7 @@ function extensionsClick(){
         player.y = 0;
       }
       if (button.name == "To Scratch"){
-        window.open("");
+        window.open("https://scratch.mit.edu/projects/1059793201/");
       }
     }
   }

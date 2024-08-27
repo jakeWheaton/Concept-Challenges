@@ -1,3 +1,12 @@
+var broadcastActions = ["make the egg appear when the chicken is clicked", 
+					"make the duck glide to the egg when the egg is clicked",
+					"make the duck point towards the mouse when the egg touches the mouse cursor"]
+var a;
+
+function broadcastSetup(){
+	a = choice(broadcastActions);
+}
+
 //Strato
 function broadcasts() {
   background(255,200,100);
@@ -14,7 +23,7 @@ function broadcasts() {
   textSize(32)
   noStroke()
   textFont(scratchFont1)
-  text("Use a broadcast message to make one sprite disappear when another is clicked", windowWidth/2-222,125,500,350);
+  text("Use a broadcast message to " + a, windowWidth/2-222,125,450,350);
   drawScratchButtons()
 }
 
@@ -27,7 +36,7 @@ function broadcastsClick(){
         player.y = 0;
       }
       if (button.name == "To Scratch"){
-        window.open("");
+        window.open("https://scratch.mit.edu/projects/1059796742/");
       }
     }
   }
