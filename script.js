@@ -88,6 +88,7 @@ function touchingMouse(obj){
   return collision(obj, {x:mouseX-windowWidth/2,y:mouseY,w:1,h:1})
 }
 
+//example change
 function choice(arr){
   return arr[floor(random(0,arr.length))]
 }

@@ -1,7 +1,8 @@
 //Thermo
+//fib is much easier than others
 algorithmNames = [
   {name:"sorting", effect:"organizes a list in alphabetic or numerical order."},
-  {name:"averaging", effect:"which finds the mean, median, or mode average of a list of numbers."},
+  {name:"averaging", effect:"finds the mean, median, or mode average of a list of numbers."},
   {name:"the Fibonacci Sequence", effect:"generates a list of numbers, each of which is the sum of the two previous numbers."}]
 
 var a
