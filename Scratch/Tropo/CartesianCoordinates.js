@@ -33,6 +33,7 @@ function cartesianCoordinatesClick() {
 	  if (button.name =="Success") {
 		  answer = prompt("Are you a master of Cartesian Coordinates? (yes/no)", "yes");
 		  if (answer == "yes"){
+			setCookie(scene,true);
 			alert("Nice Work!");
 			scene = "ScratchTropo";
 			player.x = 0;

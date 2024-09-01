@@ -25,6 +25,14 @@ function drawBuildings(buildings){
     //door
     fill(0)
     rect(building.x+building.w/2-30, building.y+building.h-100,60,100,3,3,0,0);
+	if(getCookie(building.name.replaceAll(" ","") ) ){
+		noFill()
+		stroke(0,255,0)
+		strokeWeight(3)
+		rect(building.x,building.y, building.w,building.h,5,5,0,0)
+		strokeWeight(1);
+		stroke(0);
+	}
     if(register[ENTER]){
       if(collision(building, player)){
         scene = building.name.replaceAll(" ","");

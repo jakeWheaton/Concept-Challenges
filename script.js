@@ -94,10 +94,21 @@ function choice(arr){
 
 function setCookie(name,val){
 	const d = new Date();
-	//set expiration for 1000 days
-	d.setTime(d.getTime() + (1000*24*60*60*1000));
+	//set expiration for 365 days
+	d.setTime(d.getTime() + (365*24*60*60*1000));
 	let expires = "expires="+ d.toUTCString();
 	document.cookie = name + "=" + val + ";" + expires;
+}
+
+function getCookie(name){
+	var cookies = document.cookie;
+	var cookieList = cookies.split(";");
+	var cookieDict = {};
+	for (var item of cookieList){
+		items = item.split("=");
+		cookieDict[items[0]] = items[1];
+	}
+	return cookieDict[name];
 }
 
 function keyPressed(){
