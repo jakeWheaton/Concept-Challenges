@@ -43,6 +43,23 @@ function cloningClick(){
       if (button.name == "To Scratch"){
         window.open("https://scratch.mit.edu/projects/1059803154/");
       }
+	  if (button.name =="Success") {
+		  answer = prompt("Are you a master of Cloning? (yes/no)", "yes");
+		  if (answer == "yes"){
+			setCookie(scene,true);
+			alert("Nice Work!");
+			scene = "ScratchMeso";
+			player.x = 0;
+			player.y = 0;
+		  }
+		  else {
+			setCookie(scene,false);
+			scene = "ScratchMeso";
+			alert("Nice try!");
+			player.x = 0;
+			player.y = 0;
+		  }
+	  }
     }
   }
 }

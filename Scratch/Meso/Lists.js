@@ -42,6 +42,23 @@ function listsClick(){
       if (button.name == "To Scratch"){
         window.open("https://scratch.mit.edu/projects/725032360/editor");
       }
+	  if (button.name =="Success") {
+		  answer = prompt("Are you a master of using Lists? (yes/no)", "yes");
+		  if (answer == "yes"){
+			setCookie(scene,true);
+			alert("Nice Work!");
+			scene = "ScratchMeso";
+			player.x = 0;
+			player.y = 0;
+		  }
+		  else {
+			setCookie(scene,false);
+			scene = "ScratchMeso";
+			alert("Nice try!");
+			player.x = 0;
+			player.y = 0;
+		  }
+	  }
     }
   }
 }

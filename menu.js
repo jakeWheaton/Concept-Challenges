@@ -25,7 +25,7 @@ function drawBuildings(buildings){
     //door
     fill(0)
     rect(building.x+building.w/2-30, building.y+building.h-100,60,100,3,3,0,0);
-	if(getCookie(building.name.replaceAll(" ","") ) ){
+	if(getCookie(building.name.replaceAll(" ","") ) == "true"){
 		noFill()
 		stroke(0,255,0)
 		strokeWeight(3)

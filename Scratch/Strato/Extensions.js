@@ -37,6 +37,23 @@ function extensionsClick(){
       if (button.name == "To Scratch"){
         window.open("https://scratch.mit.edu/projects/1059793201/");
       }
+	  if (button.name =="Success") {
+		  answer = prompt("Are you a master of Scratch Extensions? (yes/no)", "yes");
+		  if (answer == "yes"){
+			setCookie(scene,true);
+			alert("Nice Work!");
+			scene = "ScratchStrato";
+			player.x = 0;
+			player.y = 0;
+		  }
+		  else {
+			setCookie(scene,false);
+			scene = "ScratchStrato";
+			alert("Nice try!");
+			player.x = 0;
+			player.y = 0;
+		  }
+	  }
     }
   }
 }

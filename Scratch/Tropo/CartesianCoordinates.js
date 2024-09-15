@@ -39,6 +39,13 @@ function cartesianCoordinatesClick() {
 			player.x = 0;
 			player.y = 0;
 		  }
+		  else {
+			setCookie(scene,false);
+			scene = "ScratchTropo";
+			alert("Nice try!");
+			player.x = 0;
+			player.y = 0;
+		  }
 	  }
     }
   }

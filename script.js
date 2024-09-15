@@ -100,14 +100,16 @@ function setCookie(name,val){
 	document.cookie = name + "=" + val + ";" + expires;
 }
 
-function getCookie(name){
+function getCookie(name,debug=false){
 	var cookies = document.cookie;
 	var cookieList = cookies.split(";");
 	var cookieDict = {};
 	for (var item of cookieList){
 		items = item.split("=");
-		cookieDict[items[0]] = items[1];
+		cookieDict[items[0].trim()] = items[1];
 	}
+	if(debug)
+		console.log(cookieDict)
 	return cookieDict[name];
 }
 

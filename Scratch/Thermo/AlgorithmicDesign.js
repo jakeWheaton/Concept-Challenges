@@ -1,5 +1,6 @@
 //Thermo
 //fib is much easier than others
+//string split
 algorithmNames = [
   {name:"sorting", effect:"organizes a list in alphabetic or numerical order."},
   {name:"averaging", effect:"finds the mean, median, or mode average of a list of numbers."},
@@ -41,6 +42,23 @@ function algorithmicDesignClick(){
       if (button.name == "To Scratch"){
         window.open("https://scratch.mit.edu/projects/731633162/");
       }
+	  if (button.name =="Success") {
+		  answer = prompt("Are you a master of Algorithmic Design? (yes/no)", "yes");
+		  if (answer == "yes"){
+			setCookie(scene,true);
+			alert("Nice Work!");
+			scene = "ScratchThermo";
+			player.x = 0;
+			player.y = 0;
+		  }
+		  else {
+			setCookie(scene,false);
+			scene = "ScratchThermo";
+			alert("Nice try!");
+			player.x = 0;
+			player.y = 0;
+		  }
+	  }
     }
   }
 }

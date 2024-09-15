@@ -40,6 +40,23 @@ function variablesClick(){
       if (button.name == "To Scratch"){
        window.open("https://scratch.mit.edu/projects/717297100/editor/");
       }
+	  if (button.name =="Success") {
+		  answer = prompt("Are you a master of Variables? (yes/no)", "yes");
+		  if (answer == "yes"){
+			setCookie(scene,true);
+			alert("Nice Work!");
+			scene = "ScratchTropo";
+			player.x = 0;
+			player.y = 0;
+		  }
+		  else {
+			setCookie(scene,false);
+			scene = "ScratchTropo";
+			alert("Nice try!");
+			player.x = 0;
+			player.y = 0;
+		  }
+	  }
     }
   }
 }
