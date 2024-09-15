@@ -63,16 +63,16 @@ function drawPlayer(){
 function movePlayer(){
   lastX = player.x;
   lastY = player.y;
-  if(register[LEFT_ARROW]){
+  if(register[LEFT_ARROW] && player.x >-1000){
     player.x-=8;
   }
-  if(register[RIGHT_ARROW]){
+  if(register[RIGHT_ARROW] && player.x <1000){
     player.x+=8;
   }
-  if(register[UP_ARROW]){
+  if(register[UP_ARROW] && player.y >-1000){
     player.y-=8;
   }
-  if(register[DOWN_ARROW]){
+  if(register[DOWN_ARROW] && player.y < 1000){
     player.y+=8;
   }
 
