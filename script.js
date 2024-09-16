@@ -7,7 +7,9 @@ var menus = {
   ScratchTropo:scratchTropoMenu,
   ScratchStrato:scratchStratoMenu,
   ScratchMeso:scratchMesoMenu,
-  ScratchThermo:scratchThermoMenu
+  ScratchThermo:scratchThermoMenu,
+  JavaScript:javaScriptMenu,
+  Python:pythonMenu
 }
 challenges = {
   OrderofOperations:{draw:orderOfOperations, mousePressed:orderOfOperationsClick},
