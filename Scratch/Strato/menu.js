@@ -4,7 +4,7 @@ var scratchStratoBuildings = [
              {name:"Loops", x:450, y:-150, w:200, h:200},
              {name:"Extensions", x:-100, y: 250, w:200, h:200},
              {name:"Broadcasts", x:650, y:250, w:200, h:200},
-             {name:"Scratch", x:-100, y:-150,w:200,h:200}]
+             {name:"Scratch", x:-100, y:-150,w:200,h:200, targetX:-25, targetY:-300}]
 
 function scratchStratoMenu(){
    background(225,200,150);

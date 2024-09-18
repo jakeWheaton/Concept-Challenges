@@ -31,8 +31,8 @@ function extensionsClick(){
     if (touchingMouse(button)){
       if(button.name == "Back"){
         scene = "ScratchStrato";
-        player.x = 0;
-        player.y = 0;
+        player.x = -25;
+        player.y = 400;
       }
       if (button.name == "To Scratch"){
         window.open("https://scratch.mit.edu/projects/1059793201/");
@@ -43,15 +43,15 @@ function extensionsClick(){
 			setCookie(scene,true);
 			alert("Nice Work!");
 			scene = "ScratchStrato";
-			player.x = 0;
-			player.y = 0;
+			player.x = -25;
+			player.y = 400;
 		  }
 		  else {
 			setCookie(scene,false);
 			scene = "ScratchStrato";
 			alert("Nice try!");
-			player.x = 0;
-			player.y = 0;
+			player.x = -25;
+			player.y = 400;
 		  }
 	  }
     }

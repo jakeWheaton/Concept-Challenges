@@ -1,13 +1,13 @@
 var javaScriptBuildings = [
              //{name:"JavaScriptStrato", x:-100, y:-450, w:200, h:200},
-             //{name:"JavaScriptTropo", x:-450, y:-450, w:200, h:200},
+             {name:"JavaScriptTropo", x:-450, y:-450, w:200, h:200},
              //{name:"JavaScriptMeso", x:250, y:-450, w:200, h:200},
              //{name:"JavaScriptThermo", x:600, y:-450, w:200, h:200},
-             {name:"Menu", x:-100, y:-150,w:200,h:200}]
+             {name:"Menu", x:-100, y:-150,w:200,h:200, targetX:-25, targetY:-100}]
 
-javaScriptButtons = [{name:"Back",x:-235, y:500, w:100, h:50},
-                  {name:"To Scratch", x:-100, y:500, w:170, h:50},
-                  {name:"Success",x:95, y:500, w:180, h:50}]
+javaScriptButtons = [{name:"Back",x:-230, y:500, w:100, h:50},
+                  {name:"Starter Code", x:-115, y:500, w:215, h:50},
+                  {name:"Success",x:115, y:500, w:160, h:50}]
 
 function javaScriptMenu(){
    background(150,200,225);
@@ -23,9 +23,9 @@ function drawJavaScriptButtons(){
   translate(windowWidth/2,0)
   for (var button of javaScriptButtons){
     if(touchingMouse(button)){
-      fill(255,200,75)
+      fill(75,200,255)
     } else {
-      fill(255,150,25)
+      fill(25,150,255)
     }
     strokeWeight(2)
     stroke(0)

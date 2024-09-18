@@ -2,7 +2,7 @@ var scratchMesoBuildings = [
              {name:"Lists", x:-450, y:-450, w:200, h:200},
              {name:"Custom Blocks", x:250, y:-450, w:200, h:200},
              {name:"Cloning", x:700, y: 0, w:200, h:200},
-             {name:"Scratch", x:-100, y:-150,w:200,h:200}]
+             {name:"Scratch", x:-100, y:-150,w:200,h:200, targetX:325, targetY:-300}]
 
 
 

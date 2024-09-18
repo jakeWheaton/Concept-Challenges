@@ -6,7 +6,7 @@ var scratchTropoBuildings = [{name:"Order of Operations", x:150, y:-150, w:200, 
              {name:"Operators", x:-100, y:550, w:200, h:200},
              {name:"Sprites", x:-350, y:150, w:200, h:200},
              {name:"User Input", x:150, y:250, w:200, h:200},
-             {name:"Scratch", x:-100, y:-150, w:200,h:200}]
+             {name:"Scratch", x:-100, y:-150, w:200,h:200, targetX:-375, targetY:-300}]
 
 
 function scratchTropoMenu(){

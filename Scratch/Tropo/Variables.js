@@ -34,7 +34,7 @@ function variablesClick(){
     if (touchingMouse(button)){
       if(button.name == "Back"){
         scene = "ScratchTropo";
-        player.x = 0;
+        player.x = -275;
         player.y = 0;
       }
       if (button.name == "To Scratch"){
@@ -46,14 +46,14 @@ function variablesClick(){
 			setCookie(scene,true);
 			alert("Nice Work!");
 			scene = "ScratchTropo";
-			player.x = 0;
+			player.x = -275;
 			player.y = 0;
 		  }
 		  else {
 			setCookie(scene,false);
 			scene = "ScratchTropo";
 			alert("Nice try!");
-			player.x = 0;
+			player.x = -275;
 			player.y = 0;
 		  }
 	  }

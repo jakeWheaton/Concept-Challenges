@@ -24,8 +24,8 @@ function animationClick(){
     if (touchingMouse(button)){
       if(button.name == "Back"){
         scene = "ScratchStrato";
-        player.x = 0;
-        player.y = 0;
+        player.x = -625;
+        player.y = 400;
       }
       if (button.name == "To Scratch"){
         window.open("https://scratch.mit.edu/projects/725040383/editor/");
@@ -36,15 +36,15 @@ function animationClick(){
 			setCookie(scene,true);
 			alert("Nice Work!");
 			scene = "ScratchStrato";
-			player.x = 0;
-			player.y = 0;
+			player.x = -625;
+			player.y = 400;
 		  }
 		  else {
 			setCookie(scene,false);
 			scene = "ScratchStrato";
 			alert("Nice try!");
-			player.x = 0;
-			player.y = 0;
+			player.x = -625;
+			player.y = 400;
 		  }
 	  }
     }

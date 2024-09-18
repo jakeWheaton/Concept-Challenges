@@ -37,8 +37,8 @@ function cloningClick(){
     if (touchingMouse(button)){
       if(button.name == "Back"){
         scene = "ScratchMeso";
-        player.x = 0;
-        player.y = 0;
+        player.x = 775;
+        player.y = 150;
       }
       if (button.name == "To Scratch"){
         window.open("https://scratch.mit.edu/projects/1059803154/");
@@ -49,15 +49,15 @@ function cloningClick(){
 			setCookie(scene,true);
 			alert("Nice Work!");
 			scene = "ScratchMeso";
-			player.x = 0;
-			player.y = 0;
+			player.x = 775;
+			player.y = 150;
 		  }
 		  else {
 			setCookie(scene,false);
 			scene = "ScratchMeso";
 			alert("Nice try!");
-			player.x = 0;
-			player.y = 0;
+			player.x = 775;
+			player.y = 150;
 		  }
 	  }
     }

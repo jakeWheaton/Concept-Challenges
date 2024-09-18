@@ -43,7 +43,7 @@ function orderOfOperationsClick(){
 			setCookie(scene,false);
 			scene = "ScratchTropo";
 			alert("Nice try!");
-			player.x = 0;
+			player.x = 225;
 			player.y = 0;
 		  }
 	  }

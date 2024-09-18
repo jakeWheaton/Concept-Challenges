@@ -3,15 +3,21 @@ var player = {
 }
 var menus = {
   Menu:menu,
+  
   Scratch:scratchMenu,
   ScratchTropo:scratchTropoMenu,
   ScratchStrato:scratchStratoMenu,
   ScratchMeso:scratchMesoMenu,
   ScratchThermo:scratchThermoMenu,
+  
   JavaScript:javaScriptMenu,
+  JavaScriptTropo:javaScriptTropoMenu,
+  
   Python:pythonMenu
 }
+
 challenges = {
+	//scratch
   OrderofOperations:{draw:orderOfOperations, mousePressed:orderOfOperationsClick},
   Variables:{draw:variables,mousePressed:variablesClick,setup:variablesSetup},
   CartesianCoordinates:{draw:cartesianCoordinates, mousePressed:cartesianCoordinatesClick},
@@ -29,7 +35,10 @@ challenges = {
   Extensions:{draw:extensions, mousePressed:extensionsClick, setup:extensionsSetup},
   Animation:{draw:animation, mousePressed:animationClick},
   Sprites:{draw:sprites, mousePressed:spritesClick},
-  Sounds:{draw:sounds, mousePressed:soundsClick, setup:soundsSetup}
+  Sounds:{draw:sounds, mousePressed:soundsClick, setup:soundsSetup},
+  
+  //JavaScript
+  JSCartesianCoordinates:{draw:javaScriptCartesianCoordinates, mousePressed: javaScriptCartesianCoordinatesClick}
 }
 var register = {}
 
@@ -46,14 +55,21 @@ function draw() {
     menus[scene]();
     movePlayer();
   }
-  if (scene in challenges){
+  else if (scene in challenges){
     challenges[scene].draw()
+  }
+  else {
+	  alert("this area is under development. Return to menu");
+	  scene = "Menu";
   }
 }
 
 function mousePressed(){
   if (scene in challenges){
     challenges[scene].mousePressed();
+  }
+  if (scene in menus){
+	  //make buildings clickable
   }
 }
 

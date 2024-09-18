@@ -3,7 +3,7 @@ var pythonBuildings = [
              //{name:"pythonTropo", x:-450, y:-450, w:200, h:200},
              //{name:"pythonMeso", x:250, y:-450, w:200, h:200},
              //{name:"pythonThermo", x:600, y:-450, w:200, h:200},
-             {name:"Menu", x:-100, y:-150,w:200,h:200}]
+             {name:"Menu", x:-100, y:-150,w:200,h:200, targetX:-275, targetY:0}]
 
 pythonButtons = [{name:"Back",x:-235, y:500, w:100, h:50},
                   {name:"To Scratch", x:-100, y:500, w:170, h:50},

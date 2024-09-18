@@ -33,7 +33,7 @@ function loopsClick(){
     if (touchingMouse(button)){
       if(button.name == "Back"){
         scene = "ScratchStrato";
-        player.x = 0;
+        player.x = 525;
         player.y = 0;
       }
       if (button.name == "To Scratch"){
@@ -45,14 +45,14 @@ function loopsClick(){
 			setCookie(scene,true);
 			alert("Nice Work!");
 			scene = "ScratchStrato";
-			player.x = 0;
+			player.x = 525;
 			player.y = 0;
 		  }
 		  else {
 			setCookie(scene,false);
 			scene = "ScratchStrato";
 			alert("Nice try!");
-			player.x = 0;
+			player.x = 525;
 			player.y = 0;
 		  }
 	  }

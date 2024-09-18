@@ -36,8 +36,8 @@ function listsClick(){
     if (touchingMouse(button)){
       if(button.name == "Back"){
         scene = "ScratchMeso";
-        player.x = 0;
-        player.y = 0;
+        player.x = -375;
+        player.y = -300;
       }
       if (button.name == "To Scratch"){
         window.open("https://scratch.mit.edu/projects/725032360/editor");
@@ -48,15 +48,15 @@ function listsClick(){
 			setCookie(scene,true);
 			alert("Nice Work!");
 			scene = "ScratchMeso";
-			player.x = 0;
-			player.y = 0;
+			player.x = -375;
+			player.y = -300;
 		  }
 		  else {
 			setCookie(scene,false);
 			scene = "ScratchMeso";
 			alert("Nice try!");
-			player.x = 0;
-			player.y = 0;
+			player.x = -375;
+			player.y = -300;
 		  }
 	  }
     }

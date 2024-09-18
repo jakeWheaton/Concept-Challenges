@@ -16,6 +16,7 @@ function drawBuildings(buildings){
   for (var building of buildings){
     //structure
     strokeWeight(1)
+	textFont(scratchFont1)
     fill(200);
     rect(building.x,building.y, building.w,building.h,5,5,0,0)
     fill(0)
@@ -37,8 +38,13 @@ function drawBuildings(buildings){
       if(collision(building, player)){
         scene = building.name.replaceAll(" ","");
         register[ENTER] = false;
-        player.x = 0;
-        player.y = 0;
+		if ("targetX" in building){
+			player.x = building.targetX;
+			player.y = building.targetY;
+		} else {
+			player.x = 0;
+			player.y = 0;
+		}
         if(scene in challenges){
           if("setup" in challenges[scene]){
             challenges[scene].setup();
