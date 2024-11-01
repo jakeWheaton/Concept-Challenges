@@ -36,6 +36,7 @@ challenges = {
   Animation:{draw:animation, mousePressed:animationClick},
   Sprites:{draw:sprites, mousePressed:spritesClick},
   Sounds:{draw:sounds, mousePressed:soundsClick, setup:soundsSetup},
+  Credits:{draw:credits, mousePressed:creditsClick},
   
   //JavaScript
   JSCartesianCoordinates:{draw:javaScriptCartesianCoordinates, mousePressed: javaScriptCartesianCoordinatesClick}

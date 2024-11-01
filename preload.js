@@ -1,5 +1,5 @@
 var scratchFont1, scratchFont2, scratchFont3
-
+var scratchTropoImage
 function preload(){
 	try {
 		scratchFont1 = loadFont("https://jakewheaton.github.io/Concept-Challenges/Fonts/Mouse_Memoirs/MouseMemoirs-Regular.ttf");
@@ -11,4 +11,5 @@ function preload(){
 		scratchFont2 = 'Courier New';
 		scratchFont3 = 'Courier New';
 	}
+	scratchTropoImage = loadImage("https://jakewheaton.github.io/Concept-Challenges/Images/scratchTropoImage");
 }

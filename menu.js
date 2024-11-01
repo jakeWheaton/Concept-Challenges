@@ -1,6 +1,7 @@
 menuBuildings = [{name:"Scratch", x:150, y:-150, w:200, h:200},
              {name:"Python", x:-350, y:-150, w:200, h:200},
-             {name:"JavaScript", x:-100, y:-250, w:200, h:200}]
+             {name:"JavaScript", x:-100, y:-250, w:200, h:200},
+			 {name:"Credits", x:350, y:200, w:200, h:200}]
 
 
 function menu(){
