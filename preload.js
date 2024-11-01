@@ -11,5 +11,5 @@ function preload(){
 		scratchFont2 = 'Courier New';
 		scratchFont3 = 'Courier New';
 	}
-	scratchTropoImage = loadImage("https://jakewheaton.github.io/Concept-Challenges/Images/scratchTropoImage");
+	//scratchTropoImage = loadImage("https://jakewheaton.github.io/Concept-Challenges/Images/scratchTropoImage");
 }
