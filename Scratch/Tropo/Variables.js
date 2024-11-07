@@ -34,8 +34,8 @@ function variablesClick(){
     if (touchingMouse(button)){
       if(button.name == "Back"){
         scene = "ScratchTropo";
-        player.x = -275;
-        player.y = 0;
+        player.x = -375;
+        player.y = -525;
       }
       if (button.name == "To Scratch"){
        window.open("https://scratch.mit.edu/projects/717297100/editor/");
@@ -46,15 +46,15 @@ function variablesClick(){
 			setCookie(scene,true);
 			alert("Nice Work!");
 			scene = "ScratchTropo";
-			player.x = -275;
-			player.y = 0;
+			player.x = -375;
+			player.y = -525;
 		  }
 		  else {
 			setCookie(scene,false);
 			scene = "ScratchTropo";
 			alert("Nice try!");
-			player.x = -275;
-			player.y = 0;
+			player.x = -375;
+			player.y = -525;
 		  }
 	  }
     }

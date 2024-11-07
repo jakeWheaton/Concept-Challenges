@@ -1,6 +1,6 @@
 var scratchBuildings = [
              {name:"ScratchStrato", x:-100, y:-450, w:200, h:200},
-             {name:"ScratchTropo", x:-450, y:-450, w:200, h:200},
+             {name:"ScratchTropo", x:-450, y:-450, w:200, h:200, targetX:-35, targetY:-325},
              {name:"ScratchMeso", x:250, y:-450, w:200, h:200},
              {name:"ScratchThermo", x:600, y:-450, w:200, h:200},
              {name:"Menu", x:-100, y:-150,w:200,h:200, targetX:225, targetY:0}]
@@ -12,7 +12,8 @@ scratchButtons = [{name:"Back",x:-235, y:500, w:100, h:50},
 function scratchMenu(){
    background(225,200,150);
   push()
-    translate(windowWidth/2-player.w/2-player.x,windowHeight/2-player.h/2 - player.y)
+	let xTranslate = windowWidth/2-player.w/2-player.x
+    translate(xTranslate, windowHeight/2-player.h/2 - player.y)
     drawBuildings(scratchBuildings);
     drawPlayer();
   pop()

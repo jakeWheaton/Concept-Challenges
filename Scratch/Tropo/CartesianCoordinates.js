@@ -24,8 +24,8 @@ function cartesianCoordinatesClick() {
     if (touchingMouse(button)) {
       if(button.name == "Back") {
         scene = "ScratchTropo";
-        player.x = -25;
-        player.y = -300;
+        player.x = 450;
+        player.y = -500;
       }
       if (button.name == "To Scratch") {
         window.open("https://scratch.mit.edu/projects/719199495/");
@@ -36,15 +36,15 @@ function cartesianCoordinatesClick() {
 			setCookie(scene,true);
 			alert("Nice Work!");
 			scene = "ScratchTropo";
-			player.x = -25;
-			player.y = -300;
+			player.x = 450;
+			player.y = -500;
 		  }
 		  else {
 			setCookie(scene,false);
 			scene = "ScratchTropo";
 			alert("Nice try!");
-			player.x = -25;
-			player.y = -300;
+			player.x = 450;
+			player.y = -500;
 		  }
 	  }
     }

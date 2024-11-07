@@ -13,20 +13,22 @@ function menu(){
   pop()
 }
 
-function drawBuildings(buildings){
+function drawBuildings(buildings, justOutlines = false){
   for (var building of buildings){
-    //structure
-    strokeWeight(1)
-	textFont(scratchFont1)
-    fill(200);
-    rect(building.x,building.y, building.w,building.h,5,5,0,0)
-    fill(0)
-    textAlign(CENTER)
-    textSize(32)
-    text(building.name, building.x+building.w/2,building.y+building.h/3)
-    //door
-    fill(0)
-    rect(building.x+building.w/2-30, building.y+building.h-100,60,100,3,3,0,0);
+	 if(!justOutlines){
+		//structure
+		strokeWeight(1)
+		textFont(scratchFont1)
+		fill(200);
+		rect(building.x,building.y, building.w,building.h,5,5,0,0)
+		fill(0)
+		textAlign(CENTER)
+		textSize(32)
+		text(building.name, building.x+building.w/2,building.y+building.h/3)
+		//door
+		fill(0)
+		rect(building.x+building.w/2-30, building.y+building.h-100,60,100,3,3,0,0);
+	 }
 	if(getCookie(building.name.replaceAll(" ","") ) == "true"){
 		noFill()
 		stroke(0,255,0)

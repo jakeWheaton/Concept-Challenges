@@ -24,8 +24,8 @@ function orderOfOperationsClick(){
     if (touchingMouse(button)){
       if(button.name == "Back"){
         scene = "ScratchTropo";
-        player.x = 225;
-        player.y = 0;
+        player.x = -850;
+        player.y = -400;
       }
       if (button.name == "To Scratch"){
         window.open("https://scratch.mit.edu/projects/713976944/editor");
@@ -36,15 +36,15 @@ function orderOfOperationsClick(){
 			setCookie(scene,true);
 			alert("Nice Work!");
 			scene = "ScratchTropo";
-			player.x = 225;
-			player.y = 0;
+			player.x = -850;
+			player.y = -400;
 		  }
 		  else {
 			setCookie(scene,false);
 			scene = "ScratchTropo";
 			alert("Nice try!");
-			player.x = 225;
-			player.y = 0;
+			player.x = -850;
+			player.y = -400;
 		  }
 	  }
     }
