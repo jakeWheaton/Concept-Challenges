@@ -1,3 +1,4 @@
+//example change
 var player = {
   x:0, y:0, w:50, h:50, color:"red"
 }
