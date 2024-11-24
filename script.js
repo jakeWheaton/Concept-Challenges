@@ -37,6 +37,10 @@ challenges = {
   Animation:{draw:animation, mousePressed:animationClick},
   Sprites:{draw:sprites, mousePressed:spritesClick},
   Sounds:{draw:sounds, mousePressed:soundsClick, setup:soundsSetup},
+  Conditionals:{draw:conditionals, mousePressed:conditionalsClick, setup:conditionalsSetup},
+  Variables2:{draw:variables2, mousePressed:variables2Click, setup:variables2Setup},
+  AskAnswer:{draw:askAnswer, mousePressed:askAnswerClick, setup:askAnswerSetup},
+  CollisionDetection:{draw:collisionDetection, mousePressed:collisionDetectionClick, setup:collisionDetectionSetup},
   Credits:{draw:credits, mousePressed:creditsClick},
   
   //JavaScript
