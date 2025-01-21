@@ -19,33 +19,46 @@ var menus = {
 
 challenges = {
 	//scratch
+	//Tropo
   OrderofOperations:{draw:orderOfOperations, mousePressed:orderOfOperationsClick},
   Variables:{draw:variables,mousePressed:variablesClick,setup:variablesSetup},
   CartesianCoordinates:{draw:cartesianCoordinates, mousePressed:cartesianCoordinatesClick},
-  AlgorithmicDesign:{draw:algorithmicDesign, mousePressed:algorithmicDesignClick, setup:algorithmicDesignSetup},
-  CustomBlocks:{draw:customBlocks, mousePressed:customBlocksClick, setup:blocksSetup},
-  Lists:{draw:lists, mousePressed:listsClick, setup:listsSetup},
-  Cloning:{draw:cloning, mousePressed:cloningClick, setup:cloningSetup},
-  Loops:{draw:loops, mousePressed:loopsClick, setup:loopsSetup},
-  Recursion:{draw:recursion, mousePressed:recursionClick, setup:recursionSetup},
-  Broadcasts:{draw:broadcasts, mousePressed:broadcastsClick, setup : broadcastSetup},
   Events: {draw:events, mousePressed:eventsClick},
-  SmoothMovement: {draw:smoothMovement, mousePressed:smoothMovementClick},
   Operators:{draw:operators, mousePressed:operatorsClick, setup:operatorsSetup},
   UserInput:{draw:userInput, mousePressed:userInputClick, setup:userInputSetup},
-  Extensions:{draw:extensions, mousePressed:extensionsClick, setup:extensionsSetup},
-  Animation:{draw:animation, mousePressed:animationClick},
   Sprites:{draw:sprites, mousePressed:spritesClick},
   Sounds:{draw:sounds, mousePressed:soundsClick, setup:soundsSetup},
+  
+  //Strato
+  Loops:{draw:loops, mousePressed:loopsClick, setup:loopsSetup},
+  Broadcasts:{draw:broadcasts, mousePressed:broadcastsClick, setup : broadcastSetup},
+  SmoothMovement: {draw:smoothMovement, mousePressed:smoothMovementClick},
+  Extensions:{draw:extensions, mousePressed:extensionsClick, setup:extensionsSetup},
+  Animation:{draw:animation, mousePressed:animationClick},
   Conditionals:{draw:conditionals, mousePressed:conditionalsClick, setup:conditionalsSetup},
   Inequalities:{draw:inequalities, mousePressed:inequalitiesClick, setup:inequalitiesSetup},
   Variables2:{draw:variables2, mousePressed:variables2Click, setup:variables2Setup},
   AskAnswer:{draw:askAnswer, mousePressed:askAnswerClick, setup:askAnswerSetup},
   CollisionDetection:{draw:collisionDetection, mousePressed:collisionDetectionClick, setup:collisionDetectionSetup},
-  Credits:{draw:credits, mousePressed:creditsClick},
+  
+  //Meso
+  Lists:{draw:lists, mousePressed:listsClick, setup:listsSetup},
+  Lists2:{draw:lists2, mousePressed:lists2Click, setup:lists2Setup},
+  Gravity:{draw:gravity, mousePressed:gravityClick},
+  Timers:{draw:timers, mousePressed:timersClick},
+  Randomness:{draw:randomness, mousePressed:randomnessClick},
+  Cloning:{draw:cloning, mousePressed:cloningClick, setup:cloningSetup},
+  Cloning2:{draw:cloning2, mousePressed:cloning2Click},
+  
+  //Thermo
+  AlgorithmicDesign:{draw:algorithmicDesign, mousePressed:algorithmicDesignClick, setup:algorithmicDesignSetup},
+  CustomBlocks:{draw:customBlocks, mousePressed:customBlocksClick, setup:blocksSetup},
+  Recursion:{draw:recursion, mousePressed:recursionClick, setup:recursionSetup},
   
   //JavaScript
-  JSCartesianCoordinates:{draw:javaScriptCartesianCoordinates, mousePressed: javaScriptCartesianCoordinatesClick}
+  JSCartesianCoordinates:{draw:javaScriptCartesianCoordinates, mousePressed: javaScriptCartesianCoordinatesClick},
+  //Credits
+   Credits:{draw:credits, mousePressed:creditsClick}
 }
 var register = {}
 

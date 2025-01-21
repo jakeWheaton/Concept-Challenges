@@ -1,59 +1,49 @@
-//Meso
-listNames = ["Students","Super Heroes","Video Games","TV Shows", "Movies"]
 
-var v,n1
 
-function listsSetup(){
-  v = choice(listNames);
-  n1 = floor(random(1,11));
-
-}
-
-function lists() {
- background(255,200,100);
+function cloning2() {
+  background(255,200,100);
   fill(255,150,25)
   stroke(0)
   strokeWeight(3);
-  rect(windowWidth/2-230,115,505,360)  
+  rect(windowWidth/2-232,115,480,360)  
   fill(255);
   textAlign(CENTER)
   textSize(72)
   textFont(scratchFont1)
-  // noStroke()
   text(scene, windowWidth/2, 75)
   textAlign(LEFT)
   textSize(32)
   noStroke()
   textFont(scratchFont1)
-  text("1) Create a list with the names of 10 different "+ v +".\n\n2) make the fish say the name of the item in slot " + n1+".\n(This should find whatever item is in that slot even if the list is changed)", windowWidth/2-222,125,450,350);
+  text("Use a broadcast message when the button is clicked to tell the cat to make a clone of itself. \n\n\nEach new clone should move to a random position. \n\nOnly one clone should be added each time the button is pressed", windowWidth/2-222,125,475,350);
   drawScratchButtons()
 }
 
-function listsClick(){
+function cloning2Click(){
   for (var button of scratchButtons){
     if (touchingMouse(button)){
       if(button.name == "Back"){
         scene = "ScratchMeso";
-        player.x = -350;
+        player.x = 625;
         player.y = 0;
       }
       if (button.name == "To Scratch"){
-        window.open("https://scratch.mit.edu/projects/725032360/editor");
+        window.open("https://scratch.mit.edu/projects/1115210005/");
       }
 	  if (button.name =="Success") {
-		  answer = prompt("Are you a master of using Lists? (yes/no)", "yes");
+		  answer = prompt("Are you a master of Cloning? (yes/no)", "yes");
 		  if (answer == "yes"){
 			setCookie(scene,true);
 			alert("Nice Work!");
 			scene = "ScratchMeso";
-			player.x = -350;
+			player.x = 625;
 			player.y = 0;
 		  }
 		  else {
 			setCookie(scene,false);
 			scene = "ScratchMeso";
 			alert("Nice try!");
-			player.x = -350;
+			player.x = 625;
 			player.y = 0;
 		  }
 	  }

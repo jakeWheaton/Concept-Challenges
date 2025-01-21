@@ -1,15 +1,17 @@
 //Meso
-listNames = ["Students","Super Heroes","Video Games","TV Shows", "Movies"]
+list2Names = ["Scores","Ids","Merits","Times"]
+actions = ["increase", "decrease"]
 
-var v,n1
+var v,n1,n2,a
 
-function listsSetup(){
-  v = choice(listNames);
-  n1 = floor(random(1,11));
-
+function lists2Setup(){
+  v = choice(list2Names);
+  n1 = floor(random(0,100));
+  n2 = floor(random(0,100))
+  a = choice(actions);
 }
 
-function lists() {
+function lists2() {
  background(255,200,100);
   fill(255,150,25)
   stroke(0)
@@ -25,16 +27,16 @@ function lists() {
   textSize(32)
   noStroke()
   textFont(scratchFont1)
-  text("1) Create a list with the names of 10 different "+ v +".\n\n2) make the fish say the name of the item in slot " + n1+".\n(This should find whatever item is in that slot even if the list is changed)", windowWidth/2-222,125,450,350);
+  text("1) Create a list named "+ v +" \n\n\n2) Fill " + v + " with " + n1 + " different numbers when the game begins\n\n3) Use any trigger to make each number in " + v + " " + a + " by 1", windowWidth/2-222,125,450,350);
   drawScratchButtons()
 }
 
-function listsClick(){
+function lists2Click(){
   for (var button of scratchButtons){
     if (touchingMouse(button)){
       if(button.name == "Back"){
         scene = "ScratchMeso";
-        player.x = -350;
+        player.x = -675;
         player.y = 0;
       }
       if (button.name == "To Scratch"){
@@ -46,14 +48,14 @@ function listsClick(){
 			setCookie(scene,true);
 			alert("Nice Work!");
 			scene = "ScratchMeso";
-			player.x = -350;
+			player.x = -675;
 			player.y = 0;
 		  }
 		  else {
 			setCookie(scene,false);
 			scene = "ScratchMeso";
 			alert("Nice try!");
-			player.x = -350;
+			player.x = -675;
 			player.y = 0;
 		  }
 	  }
